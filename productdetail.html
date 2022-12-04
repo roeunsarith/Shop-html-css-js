@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="home/style/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+    <a href="#" class="arrow-top" id="scroll-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <div class="header1">
+        <div class="menu">
+            <div class="logo">
+                <a href="">GRONO</a>
+            </div>
+            <div class="search-frm flex">
+                <select  name="txt-cate" id="txt-cate">
+                    <option value="">All Category</option>
+                </select>
+                <input type="search" id="txt-search" placeholder="search here...">
+                <div id="btn-search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="contacts">
+                <i class="fa-solid fa-phone"></i>
+                <span>+855 976990466</span>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="header2">
+        <div class="menu">
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <div class='menu_left'>
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">CONATCT</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav main">
+                <a href="index.html" >Home</a>   
+                <a href="shop.html" class="active">SHOP</a>
+                <a href="contactus.html">CONTACT</a>
+                <a href="aboutus.html">ABOUT US</a>
+            </div>
+           <div class="nav">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="countCart">CART</span>
+                </a>
+                <a href="#" style="margin-right: 0;">
+                    <i class="fa-solid fa-user"></i>
+                    <span>ACCOUNT</span>
+                </a>
+                <a class="user" style="margin-right: 0;">
+                    <i class=""></i>
+                    <span>login</span>
+                    <div class="user_detail">
+                        <div class="my_name">
+                            <h2>ROUEN SARITH</h2>
+                        </div>
+                        <hr>
+                        <div class="my_account">
+                            <h2>MY ACCOUNT</h2>
+                            <div class="group_account">
+                                <p>Birthday</p> 
+                                <p>Chang Password</p>
+                                <p>Address</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my_shop">
+                            <h2>MY SHOP</h2>
+                            <div class="group_shop">
+                                <p>Point</p>
+                                <p>Orders & Returns</p>
+                                <p>Wishlist</p>
+                                <p>Gift Card</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my_setting">
+                            <h2>Setting</h2>
+                        </div>
+                        <button class="logout">Logout</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+       
+    <div class="container_product">
+        <div class="product_detail">
+            <div class="product_image">
+                <div class='big-image'>
+                    <div class="btn-slide btn-back">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="btn-slide btn-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class='small_img'>
+                   
+                </div>
+            </div>
+            <div class="product_info">
+                <h1>Product's name</h1>
+                <div class="price"><span class="red">$12.00</span><span>-</span><span class="green">$10.00</span></div> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip commodo consequat.</p>
+                <hr>
+                
+                <div class="Qty">
+                    <h2>QTY</h2>
+                    <div class="qty_count">
+                        <span class="sub">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </span>
+                        <span class="res">
+                            1
+                        </span>
+                        <span class="plus">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                    </div>  
+                </div>
+                <div class="btn">
+                    <a><button>Add to Cart <i class='fas fa-shopping-cart'></i></button></a>
+                    <a><button>Add To Wishlist <i class='fa-solid fa-heart'></i></button></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row_product">
+            
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a href="shop.html"> <i class="fas fa-angle-right"></i> shop</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-angle-right"></i> login</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> register</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> cart</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> orders</a>
+            </div>
+            <div class="box">
+                <h3>contact us</h3>
+                <a href="#"><i class="fas fa-phone"></i> +885 97690466</a>
+                <a href="#"><i class="fas fa-phone"></i> +885 968601113</a>
+                <a href="#"><i class="fas fa-envelope"></i> shaikh@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </section>
+        <div class="credit">&copy; copyright @ by <span>mr. Roeun Sarith</span> | all rights reserved!</div>
+    </footer>
+</body>
+<script src="js/data.js"></script>
+<script src="js/action.js"></script>
+<script src="js/zoomsl.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    $(document).ready(function(){
+       
+        const id = window.localStorage.getItem("id");
+        var cat_id="";
+        getProductDetail();
+        function getProductDetail(){
+            var product = data.product;
+            var txt = "";
+            product.map((item,i)=>{
+                if(item.id==id){
+                    var img = item.img;
+                    cat_id = item.category;
+                       $('.product_info').find('h1').text(item.name);
+                       $('.product_info').find('.price .red').text('$'+item.price);
+                       $('.product_info').find('.price .green').text('$'+item.did_price);
+                       $('.product_info').find('hr').after(color);
+                       var txt =`<img src='img/${img[0]}' class="block__pic" alt=''>`
+                        var txt2 = "";
+                        for(i=0;i<img.length;i++){ 
+                            txt2+=`<img src='img/${img[i]}' alt=''>`;
+                        }
+                        $('.big-image').html(txt);
+                        $('.small_img').html(txt2);
+                        $('.small_img img').eq(0).addClass('hilight');
+                        var s = 0;
+                        $('.small_img').on('click','img',function(){
+                            var eThis = $(this);
+                            var image = eThis.attr('src');
+                            // var txt =`<img src='${image}' class="block__pic" alt=''>`
+                            // $('.big-image').html(txt)
+                            $('.big-image img').attr('src',image);
+                            $('.small_img').find('img').eq(s).removeClass('hilight');
+                            s = eThis.index();
+                            $('.small_img').find('img').eq(s).addClass('hilight');
+                        })
+                        $('.sub').click(function(){
+                            var res = $('.res');
+                            if(parseInt(res.text())==1){
+                                return;
+                            }
+                            res.text(parseInt(res.text())-1);
+                        })
+                        $('.plus').click(function(){
+                            var res = $('.res');
+                            res.text(parseInt(res.text())+1);
+                        })
+
+                }
+            })
+        }
+        
+        getRelateProduct();
+        function getRelateProduct(){
+            var category = data.category;
+            var txt = "";
+            // .container_product
+            var row_product = $('.container_product .row_product');
+            for(i in category){
+               if(category[i].id==cat_id){
+                    txt += `<div class="row_title">
+                                <h3>${category[i].name}</h3>
+                            </div>`
+               }
+
+
+                var product = data.product;
+                product = product.slice(0,75);
+                var txt2 = "";
+                var txt1 ="";
+                product.map((item,i)=>{
+                    if(item.category == cat_id){
+                        var img = item.img;
+                         txt2 += `                              
+                                    <div class="swiper-slide products" data-id="${item.id}">
+                                        <div class="img_box">
+                                            <img src="img/${img[0]}"  alt="">
+                                            <div class="action">
+                                                <button class="btn_love"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn_preview" data-opt="${item.id}"><i class="fa-solid fa-eye"></i></button>
+                                                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>${item.name}</h3>
+                                            <div class="price">
+                                                <a>$${product[i].price}</a>
+                                                <span>$${product[i].did_price}</span>
+                                            </div>
+                                            <a href="#" class="cart">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                ` 
+                                     
+                    }
+                })
+                var txt1 = `<div class="swiper row_item"><div class="swiper-wrapper">${txt2}</div></div>`
+                
+            }
+            row_product.html(txt+txt1);
+        }
+        $(".block__pic").imagezoomsl({
+            zoomrange: [3, 3]
+        });    
+        var swiper = new Swiper(".row_item", {
+            loop:true,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 3,
+                },
+                650: {
+                    slidesPerView: 3,   
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            }
+        });
+    })
+</script>
+</html>
