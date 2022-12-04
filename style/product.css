@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap');
+:root{
+    --blue: #233a95;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+:root {
+    --header-height: 3.5rem;
+    /* ========color=============== */
+    --first-color: hsl(36, 72%, 48%);
+    --first-color-alt: hsl(36, 72%, 44%);
+    --black-color:hsl(206, 12%, 12%);
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(206, 12%, 12%);
+    --text-color: hsl(206, 4%, 42%);
+    --text-color-light: hsl(206, 4%, 75%);
+    --body-color: hsl(206, 4%, 97%);
+    --container-color: #fff;
+
+    /* =========font=============== */
+    --body-font: 'Battambang', cursive;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* =========font-weight========= */
+    --font-bold: 700;
+
+    /* =========z-index============== */
+    
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+body{
+    /* background-color: #f9f4fb; */
+    background-color: rgb(249 250 251);
+}
+*{
+    font-family: 'Battambang', cursive;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}

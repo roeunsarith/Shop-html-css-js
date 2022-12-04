@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="home/style/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a href="#" class="arrow-top" id="scroll-up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <div class="header1">
+        <div class="menu">
+            <div class="logo">
+                <a href="">GRONO</a>
+            </div>
+            <div class="search-frm flex">
+                <select  name="txt-cate" id="txt-cate">
+                    <option value="">All Category</option>
+                </select>
+                <input type="search" id="txt-search" placeholder="search here...">
+                <div id="btn-search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="contacts">
+                <i class="fa-solid fa-phone"></i>
+                <span>+855 976990466</span>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="header2">
+        <div class="menu">
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <div class='menu_left'>
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">CONATCT</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav main">
+                <a href="index.html" >Home</a>   
+                <a href="shop.html" class="active">SHOP</a>
+                <a href="contactus.html">CONTACT</a>
+                <a href="#">ABOUT US</a>
+            </div>
+            <div class="nav">        
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="countCart">CART</span>
+                </a>
+                <a class="user" style="margin-right: 0;">
+                    <i class=""></i>
+                    <span>login</span>
+                    <div class="user_detail">
+                        <div class="my_name">
+                            <h2>ROUEN SARITH</h2>
+                        </div>
+                        <hr>
+                        <div class="my_account">
+                            <h2>MY ACCOUNT</h2>
+                            <div class="group_account">
+                                <p>Birthday</p> 
+                                <p>Chang Password</p>
+                                <p>Address</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my_shop">
+                            <h2>MY SHOP</h2>
+                            <div class="group_shop">
+                                <p>Point</p>
+                                <p>Orders & Returns</p>
+                                <p>Wishlist</p>
+                                <p>Gift Card</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my_setting">
+                            <h2>Setting</h2>
+                        </div>
+                        <button class="logout">Logout</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="left_contain left">
+            <div class="slide_cate">
+                <div class="cate flex" style="background-color:#233a95;color:#fff; border-radius:5px;">
+                    <span>All Category</span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul>
+                </ul>
+            </div>    
+            <div class="row_pic">
+                <img src="img/pic3.jpg" alt="">
+            </div>
+            <div class="row_size">
+                <div class="title">
+                    FILTER BY SIZE
+                </div>
+                <ul>
+                    <li>
+                        <a>XXS</a>
+                    </li>
+                    <li>
+                        <a>XS</a>
+                    </li>
+                    <li>
+                        <a>S</a>
+                    </li>
+                    <li>
+                        <a>M</a>
+                    </li>
+                    <li>
+                        <a>L</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row_color">
+                <div class="title">
+                    FILTER BY COLOR
+                </div>
+                <ul>
+                    <li>
+                        <a>BLUE</a>
+                    </li>
+                    <li>
+                        <a>RED</a>
+                    </li>
+                    <li>
+                        <a>BLACK</a>
+                    </li>
+                    <li>
+                        <a>WHITE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right_contain">
+            <div class="total_filter flex">
+                <div class="count">
+                    <h3>New In (20 Items)</h3>
+                </div>
+                <div class="filter">
+                    <select name="filter" id="filter">
+                        <option value="0">Default Sorting</option>
+                        <option value="1">Sort By Latest</option>
+                        <option value="2">Sort By Price : Hight to Low</option>
+                        <option value="3">Sort By Price : Low to Hight</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row_product">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a href="shop.html"> <i class="fas fa-angle-right"></i> shop</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-angle-right"></i> login</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> register</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> cart</a>
+                <a href="#"> <i class="fas fa-angle-right"></i> orders</a>
+            </div>
+            <div class="box">
+                <h3>contact us</h3>
+                <a href="#"><i class="fas fa-phone"></i> +885 97690466</a>
+                <a href="#"><i class="fas fa-phone"></i> +885 968601113</a>
+                <a href="#"><i class="fas fa-envelope"></i> shaikh@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </section>
+        <div class="credit">&copy; copyright @ by <span>mr. Roeun Sarith</span> | all rights reserved!</div>
+    </footer>
+</body>
+<script src="js/data.js"></script>
+<script src="js/action.js"></script>
+<script>
+    $(document).ready(function(){
+    
+        // MenuCategory================
+        slideCategory();
+        function slideCategory(){
+            var txt = ""
+            var slideMenu = $('.slide_cate');
+            var slideCate = data.category;
+            var slideCate = slideCate.slice(0,5);
+            for(i in slideCate){
+                txt += `<li>
+                            <a class="flex" data-opt="${slideCate[i].id}">
+                                <span>${slideCate[i].name}</span>
+                                <i class="${slideCate[i].icon}"></i>
+                            </a>
+                        </li>`;
+                slideMenu.find('ul').html(txt);
+            }
+        } 
+
+        // Click on link
+        $('.left_contain').on('click','.slide_cate ul li a',function(){
+            var eThis = $(this);
+            var id = eThis.data('opt');
+            var row_product = $('.right_contain .row_product');                            
+            var product = data.product;
+            // var num = product.length;
+            // $('.right_contain .count h3').text('New In ('+num+' Items)');
+                var txt2 = "";
+                var num = 0;
+                
+                product.map((item,i)=>{
+                    if(item.category == id){
+                        var img = item.img;
+                            num +=1;
+                            txt2 += `                              
+                                    <div class="products" data-id="${item.id}">
+                                        <div class="img_box">
+                                            <img src="img/${img[0]}" alt="">
+                                            <div class="action">
+                                                <button class="btn_love"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn_preview" data-opt="${item.id}"> <i class="fa-solid fa-eye"></i></button>
+                                                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>${item.name}</h3>
+                                            <div class="price">
+                                                <a>$${product[i].price}</a>
+                                                <span>$${product[i].did_price}</span>
+                                            </div>
+                                            <a href="#" class="cart">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                ` 
+                                        
+                    }
+                })
+            $('.right_contain .count h3').text('New In ('+num+' Items)');
+            var txt1 = `<div class="row_item">${txt2}</div>`
+            row_product.html(txt1);
+        });
+        
+
+        // GetProductData 
+        getProduct();
+        function getProduct(){
+            var row_product = $('.right_contain .row_product');                            
+            var product = data.product;
+            product = product.slice(0,20);
+            var num = product.length;
+            $('.right_contain .count h3').text('New In ('+num+' Items)');
+            var txt2 = "";
+                product.map((item,i)=>{                  
+                    var img = item.img;
+                        txt2 += `                              
+                                <div class="products" data-id="${item.id}">
+                                    <div class="img_box">
+                                        <img src="img/${img[0]}" alt="">
+                                        <div class="action">
+                                            <button class="btn_love"><i class="fa-solid fa-heart"></i></button>
+                                            <button class="btn_preview" data-opt="${item.id}"> <i class="fa-solid fa-eye"></i></button>
+                                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>${item.name}</h3>
+                                        <div class="price">
+                                            <a>$${product[i].price}</a>
+                                            <span>$${product[i].did_price}</span>
+                                        </div>
+                                        <a href="#" class="cart">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            `                         
+                    
+                })
+            var txt1 = `<div class="row_item">${txt2}</div>`
+            row_product.html(txt1);
+            
+        }
+        
+        // onChange filter
+        $('.right_contain').on('change','.total_filter .filter select',function(){
+            var eThis = $(this);
+            var id = eThis.val();
+            var row_product = $('.right_contain .row_product');  
+            var product = data.product;
+            if(id==0){
+                product = product.sort((a, b) => {return a.id-b.id});
+            }
+            else if(id == 1){
+                product = product.sort((a, b) => {return  b.id-a.id});
+            }else if(id==2){
+                product = product.sort((a, b) => {return  b.did_price-a.did_price});
+            }else if(id==3){
+                product = product.sort((a, b) => {return  a.did_price-b.did_price});
+            }                     
+            product = product.slice(0,20);
+            var num = product.length;
+            $('.right_contain .count h3').text('New In ('+num+' Items)');
+            var txt2 = "";
+                product.map((item,i)=>{   
+                    var img = item.img;
+                        txt2 += `                              
+                                <div class="products" data-id="${item.id}">
+                                    <div class="img_box">
+                                        <img src="img/${img[0]}" alt="">
+                                        <div class="action">
+                                            <button class="btn_love"><i class="fa-solid fa-heart"></i></button>
+                                            <button class="btn_preview" data-opt="${item.id}"> <i class="fa-solid fa-eye"></i></button>
+                                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>${item.name}</h3>
+                                        <div class="price">
+                                            <a>$${product[i].price}</a>
+                                            <span>$${product[i].did_price}</span>
+                                        </div>
+                                        <a href="#" class="cart">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            `                         
+                    
+                })
+            var txt1 = `<div class="row_item">${txt2}</div>`
+            row_product.html(txt1);
+        })
+    
+    
+    
+    })
+</script>
+</html>
